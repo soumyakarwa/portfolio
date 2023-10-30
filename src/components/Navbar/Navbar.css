@@ -1,0 +1,23 @@
+.navbar-container {
+    font-weight: var(--font-weight-medium); 
+    font-size: 1.25rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem 2rem; */
+    margin-bottom: 2rem;
+  }
+  
+.navbar-left {
+    /* flex: 1; */
+}
+  
+.navbar-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-component {
+   cursor: pointer;
+}
+  

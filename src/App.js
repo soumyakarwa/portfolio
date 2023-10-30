@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// App.jsx
+import React, { useState } from 'react';
+import "./App.css";
+import Navbar from '../src/components/Navbar/Navbar.jsx';
+import Work from "../src/components/Work/Work.jsx";
+import Play from "../src/components/Play/Play.jsx";
+import About from "../src/components/About/About.jsx";
 
-function App() {
+const App = () => {
+  const [currentSection, setCurrentSection] = useState('work');
+
+  const handleSectionChange = (section) => {
+    setCurrentSection(section);
+  };
+
+  const renderSection = () => {
+    switch (currentSection) {
+      case 'work':
+        return <Work />;
+      case 'play':
+        return <Play />;
+      case 'about':
+        return <About />;
+      default:
+        return <Work />; 
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar onSectionChange={handleSectionChange} />
+      {renderSection()}
     </div>
   );
-}
+};
 
 export default App;

@@ -1,8 +1,15 @@
+:root {
+  --body-font: 'PlayfairDisplay'; 
+  --font-weight-light: 200;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--body-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +18,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'CoromorantGaramond';
+  src: url('../public/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype');
+  /* font-weight: normal;
+  font-style: normal; */
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+
+

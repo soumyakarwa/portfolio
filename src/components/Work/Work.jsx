@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Work.css";
 import ProjectHolder from "../ProjectHolder/ProjectHolder.jsx";
 import wordPotraitGif from "../../assets/wordpotrait.gif";
-import fibonacciGif from "../../assets/fibonacci.gif";
 
 const Work = () => {
   const [hoveredProject, setHoveredProject] = useState(null);

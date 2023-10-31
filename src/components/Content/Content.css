@@ -6,11 +6,25 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
+
+  .image-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
   
   .image-container img {
     width: 60vw; 
-    /* max-width: 500px;  Adjust as needed */
     object-fit: cover; 
+  }
+
+  .image-container .placeholder {
+    width: 60vw; 
+    font-family: var(--body-font-italics); 
+    font-size: var(--body-font-size);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
   }
   
   .description-container {
@@ -26,4 +40,5 @@
   .description-container .description-text {
     /* font-size: 1rem;  Adjust as needed */
   }
+  
   

@@ -40,7 +40,7 @@ const App = () => {
           {renderSection()}
         </CSSTransition>
       </SwitchTransition>
-    {/* <Footer/> */}
+    <Footer/>
     </div>
   );
 };

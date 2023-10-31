@@ -39,6 +39,7 @@
 .description-container .button-container {
   display: flex; 
   gap: 0.5rem; 
+  text-decoration: none;
 }
 
 .description-container .button{
@@ -56,6 +57,11 @@
 .description-container .button:hover {
   background-color: #333;
   color: #fff; 
+}
+
+.description-container a{
+  text-decoration: none;
+  color: white;
 }
 
 .description-container .description-text {

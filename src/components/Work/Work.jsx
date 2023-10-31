@@ -28,6 +28,8 @@ const Work = () => {
         img={wordPotraitGif}
         subtitle="Computational Analysis of Literary Building Blocks"
         description="What is fiction really made of? What does an editor do? They work on the structure, the word choice, the sentence length, the chapters and every small detail that makes a good story into a great book. I wanted to examine these nuances and chose words as a starting point. I wanted to make a data portrait of sorts using a dataset that highlighted the frequency of different words in a book."
+        githubpages="https://soumyakarwa.github.io/5in5/"
+        repolink="https://github.com/soumyakarwa/5in5"
         isShown={
           hoveredProject === "word portrait" ||
           selectedProject === "word portrait"
@@ -40,7 +42,9 @@ const Work = () => {
         projectScope="creative coding, digital media"
         img={fibonacciGif}
         subtitle="The Golden Ratio"
-        description="Fibonacci weaves its way through the natural world with an elegance that poets and philosophers have long admired. It is not just a sequence but a natural law, a universal language of growth and harmony. It captures a beauty that is both calculated and free, a reminder that within the apparent chaos of life, there is order. "
+        description="Fibonacci weaves its way through the natural world with an elegance that poets and philosophers have long admired. It is not just a sequence but a natural law, a universal language of growth and harmony. It captures a beauty that is both calculated and free, a reminder that within the apparent chaos of life, there is order."
+        githubpages="https://soumyakarwa.github.io/typography_poster/"
+        repolink="https://github.com/soumyakarwa/typography_poster"
         isShown={
           hoveredProject === "fibonacci" || selectedProject === "fibonacci"
         }
@@ -64,6 +68,8 @@ const Work = () => {
         img={typographicIllusionGif}
         subtitle="Hidden in Plain Sight"
         description="I wanted to create something very simple but beautiful."
+        githubpages="https://soumyakarwa.github.io/optical_illusion/"
+        repolink="https://github.com/soumyakarwa/optical_illusion"
         isShown={
           hoveredProject === "illusion" || selectedProject === "illusion"
         }

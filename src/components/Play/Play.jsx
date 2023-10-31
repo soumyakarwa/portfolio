@@ -26,6 +26,8 @@ const Play = () => {
         img={lightAndTime}
         subtitle="Stellar Memories"
         description="I've always been fascinated with the relationship between light & time. And how sometimes, the stars we see in the night sky might have already died, because they might be so far away that their light has taken years to reach us. We see stars that are billions of light-years away as they were billions of years ago. I find it really profound that light (or waves itself) creates a difference between the time at which things happen and the time at which we are able to see them."
+        githubpages="https://soumyakarwa.github.io/experimental_clock-new/"
+        repolink="https://github.com/soumyakarwa/experimental_clock-new"
         isShown={
           hoveredProject === "light and time" ||
           selectedProject === "light and time"
@@ -52,6 +54,8 @@ const Play = () => {
         img={formGeneratorGif}
         subtitle="Anatomy of Curiosity"
         description="I'm taking a Typography elective this semester and am feeling very inspired by the intricacy of type. I wanted to play around with the form of the word curiosity."
+        githubpages="https://soumyakarwa.github.io/form_generator/"
+        repolink="https://github.com/soumyakarwa/form_generator"
         isShown={
           hoveredProject === "typographic form" ||
           selectedProject === "typographic form"

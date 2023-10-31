@@ -9,6 +9,8 @@ const ProjectHolder = ({
   img,
   subtitle,
   description,
+  githubpages,
+  repolink,
   isShown,
   onHover,
   onClick,
@@ -26,7 +28,13 @@ const ProjectHolder = ({
         <div className="project-scope">{projectScope}</div>
       </div>
       {isShown && (
-        <Content imageSrc={img} subtitle={subtitle} description={description} />
+        <Content
+          imageSrc={img}
+          subtitle={subtitle}
+          description={description}
+          githubpages={githubpages}
+          repolink={repolink}
+        />
       )}
     </div>
   );

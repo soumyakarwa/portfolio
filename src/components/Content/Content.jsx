@@ -14,20 +14,24 @@ const Content = ({
     <div className="placeholder">coming soon</div>
   );
 
+  const renderButtons = imageSrc ? (
+    <>
+      <div className="button">
+        <a href={githubpages}>check it out</a>
+      </div>
+      <div className="button">
+        <a href={repolink}>github repo</a>
+      </div>
+    </>
+  ) : null;
+
   return (
     <div className="content-container">
       <div className="image-container">{renderImageOrPlaceholder}</div>
       <div className="description-container">
         <div className="subtitle">{subtitle}</div>
         <div className="description-text">{description}</div>
-        <div className="button-container">
-          <div className="button">
-            <a href={githubpages}>check it out</a>
-          </div>
-          <div className="button">
-            <a href={repolink}>github repo</a>
-          </div>
-        </div>
+        <div className="button-container">{renderButtons}</div>
       </div>
     </div>
   );

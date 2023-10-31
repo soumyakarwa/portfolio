@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Play.css";
 import ProjectHolder from "../ProjectHolder/ProjectHolder.jsx";
-import wordPotraitGif from "../../assets/wordpotrait.gif";
+import formGeneratorGif from "../../assets/formGenerator.gif";
+import lightAndTime from "../../assets/lightAndTime.gif";
 
 const Play = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -20,30 +21,43 @@ const Play = () => {
   return (
     <div className="play-container">
       <ProjectHolder
-        projectName="typographic form"
+        projectName="light, space & time"
         projectScope="creative coding"
-        img={wordPotraitGif}
-        subtitle="What is fiction made of?"
-        description="What is fiction really made of? What does an editor do? They work on the structure, the word choice, the sentence length, the chapters and every small detail that makes a good story into a great book. I wanted to examine these nuances and chose words as a starting point. I wanted to make a data portrait of sorts using a dataset that highlighted the frequency of different words in a book."
+        img={lightAndTime}
+        subtitle="Stellar Memories"
+        description="I've always been fascinated with the relationship between light & time. And how sometimes, the stars we see in the night sky might have already died, because they might be so far away that their light has taken years to reach us. We see stars that are billions of light-years away as they were billions of years ago. I find it really profound that light (or waves itself) creates a difference between the time at which things happen and the time at which we are able to see them."
         isShown={
-          hoveredProject === "typographic form" ||
-          selectedProject === "typographic form"
+          hoveredProject === "light and time" ||
+          selectedProject === "light and time"
         }
-        onHover={() => handleProjectHover("typographic form")}
-        onClick={() => handleProjectClick("typographic form")}
+        onHover={() => handleProjectHover("light and time")}
+        onClick={() => handleProjectClick("light and time")}
       />
-      <ProjectHolder
-        projectName="lost and found"
+      {/* <ProjectHolder
+        projectName="lost & found"
         projectScope="creative coding, illustration"
         img={wordPotraitGif}
-        subtitle="The golden ratio"
-        description="What is fiction really made of? What does an editor do? They work on the structure, the word choice, the sentence length, the chapters and every small detail that makes turns a good story into a great book. I wanted to examine these nuances and chose **words** as a starting point. I wanted to make a data portrait of sorts using a dataset that highlighted the frequency of different words in a book."
+        subtitle="Code & Illustration"
+        description="I used p5.js to illustrate a bracelet lost at Melbourne airport. I wanted to convey the emotion of being lost. When I try to imagine objects I’ve lost, the image is always blurry - distant. I can picture the item, but I can never quite picture where I lost it. To convey this, I randomized the position of the bracelet in the airport. Each time the program is run, the bracelet is in a different position, depicting it as truly lost."
         isShown={
           hoveredProject === "lost and found" ||
           selectedProject === "lost and found"
         }
         onHover={() => handleProjectHover("lost and found")}
         onClick={() => handleProjectClick("lost and found")}
+      /> */}
+      <ProjectHolder
+        projectName="typographic form"
+        projectScope="creative coding"
+        img={formGeneratorGif}
+        subtitle="Anatomy of Curiosity"
+        description="I'm taking a Typography elective this semester and am feeling very inspired by the intricacy of type. I wanted to play around with the form of the word curiosity."
+        isShown={
+          hoveredProject === "typographic form" ||
+          selectedProject === "typographic form"
+        }
+        onHover={() => handleProjectHover("typographic form")}
+        onClick={() => handleProjectClick("typographic form")}
       />
       <hr className="divider" />
     </div>

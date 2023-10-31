@@ -1,29 +1,22 @@
 // Footer.jsx
 import React from "react";
-import "./Footer.css"; // Import the CSS (if you create a CSS file)
+import "./Footer.css";
+import { ReactComponent as Github } from "../../assets/github.svg"; // Update the path to your SVG file
+import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg"; // Update the path to your SVG file
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
-      <div className="footer-left">Get in touch</div>
-      <div className="footer-right">
-        <a
-          href="https://github.com/your-username"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/path-to-your/github-icon.png" alt="GitHub" />
-        </a>
-        <a href="mailto:your-email@example.com">
-          <img src="/path-to-your/email-icon.png" alt="Email" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/your-username/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="/path-to-your/linkedin-icon.png" alt="LinkedIn" />
-        </a>
+    <footer className="footer">
+      <div className="footer-content">
+        <span className="email">karws352@newschool.edu</span>
+        <div className="icons">
+          <a href="https://github.com/soumyakarwa">
+            <Github className="icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/soumyakarwa/">
+            <LinkedIn className="icon" />
+          </a>
+        </div>
       </div>
     </footer>
   );

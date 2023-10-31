@@ -1,11 +1,13 @@
 :root {
   --body-font: 'PlayfairDisplay'; 
+  --body-font-italics:'PlayfairDisplayItalics'; 
   --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
   --body-font-size: 0.8rem;
   --navbar-font-size: 1.25rem;
+  --footer-font-size: 1rem;
 }
 
 /* TRANSITIONS*/
@@ -41,17 +43,13 @@ code {
 }
 
 @font-face {
-  font-family: 'CoromorantGaramond';
-  src: url('../public/fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype');
-  /* font-weight: normal;
-  font-style: normal; */
-}
-@font-face {
   font-family: 'PlayfairDisplay';
   src: url('../public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
-  /* font-weight: normal;
-  font-style: normal; */
 }
 
+@font-face {
+  font-family: 'PlayfairDisplayItalics';
+  src: url('../public/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+}
 
 

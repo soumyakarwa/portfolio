@@ -1,0 +1,22 @@
+/* Footer.css */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+    margin-bottom: 2rem;
+  }
+  
+  .footer-left {
+    /* Style for the left side of the footer */
+  }
+  
+  .footer-right a {
+    margin-left: 1rem;  /* Space between icons */
+  }
+  
+  .footer-right img {
+    width: 2rem;  /* Adjust icon size */
+    height: auto;
+  }
+  

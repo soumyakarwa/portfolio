@@ -1,6 +1,6 @@
 .navbar-container {
     font-weight: var(--font-weight-medium); 
-    font-size: 1.25rem; 
+    font-size: var(--navbar-font-size); 
     display: flex;
     justify-content: space-between;
     align-items: center;

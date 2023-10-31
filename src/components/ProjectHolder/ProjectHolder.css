@@ -3,7 +3,12 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    transition: transform 0.3s ease-in-out;
   }
+
+  /* .project-holder.active {
+    transform: translateY(10rem); /* Adjust this value to control how far down the ProjectHolder moves 
+  } */
   
 .divider {
     width: 100%;

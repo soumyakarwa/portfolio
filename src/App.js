@@ -5,6 +5,8 @@ import Navbar from '../src/components/Navbar/Navbar.jsx';
 import Work from "../src/components/Work/Work.jsx";
 import Play from "../src/components/Play/Play.jsx";
 import About from "../src/components/About/About.jsx";
+import Footer from "../src/components/Footer/Footer.jsx"
+import { SwitchTransition, CSSTransition } from 'react-transition-group';
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState('work');
@@ -29,7 +31,16 @@ const App = () => {
   return (
     <div className="App">
       <Navbar onSectionChange={handleSectionChange} />
-      {renderSection()}
+      <SwitchTransition>
+        <CSSTransition
+          key={currentSection}
+          timeout={300}  // Match the duration in your CSS
+          classNames="fade"
+        >
+          {renderSection()}
+        </CSSTransition>
+      </SwitchTransition>
+    {/* <Footer/> */}
     </div>
   );
 };

@@ -1,7 +1,13 @@
 import React from "react";
 import "./Content.css";
 
-const Content = ({ imageSrc, subtitle, description }) => {
+const Content = ({
+  imageSrc,
+  subtitle,
+  description,
+  githubpages,
+  repolink,
+}) => {
   const renderImageOrPlaceholder = imageSrc ? (
     <img src={imageSrc} alt="Project" />
   ) : (
@@ -14,6 +20,14 @@ const Content = ({ imageSrc, subtitle, description }) => {
       <div className="description-container">
         <div className="subtitle">{subtitle}</div>
         <div className="description-text">{description}</div>
+        <div className="button-container">
+          <div className="button">
+            <a href={githubpages}>check it out</a>
+          </div>
+          <div className="button">
+            <a href={repolink}>github repo</a>
+          </div>
+        </div>
       </div>
     </div>
   );

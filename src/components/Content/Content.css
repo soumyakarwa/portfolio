@@ -1,44 +1,65 @@
 /* Content.css */
 .content-container {
-    display: flex;
-    justify-content: space-evenly;
-    /* align-items: center; */
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 
-  .image-container {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .image-container img {
-    width: 60vw; 
-    object-fit: cover; 
-  }
+.image-container {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
 
-  .image-container .placeholder {
-    width: 60vw; 
-    font-family: var(--body-font-italics); 
-    font-size: var(--body-font-size);
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .description-container {
-    width: 30vw;  
-    font-size: var(--body-font-size);
-  }
+.image-container img {
+  width: 60vw; 
+  object-fit: cover; 
+}
 
-  .description-container .subtitle {
-    font-weight: var(--font-weight-bold); 
-    margin-bottom: 1rem;
-  }
-  
-  .description-container .description-text {
-    /* font-size: 1rem;  Adjust as needed */
-  }
-  
-  
+.image-container .placeholder {
+  width: 60vw; 
+  font-family: var(--body-font-italics); 
+  font-size: var(--body-font-size);
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.description-container {
+  width: 30vw;  
+  font-size: var(--body-font-size);
+}
+
+.description-container .subtitle {
+  font-weight: var(--font-weight-bold); 
+  margin-bottom: 1rem;
+}
+
+.description-container .button-container {
+  display: flex; 
+  gap: 0.5rem; 
+}
+
+.description-container .button{
+  display: inline-block; 
+  background-color: black; 
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.description-container .button:hover {
+  background-color: #333;
+  color: #fff; 
+}
+
+.description-container .description-text {
+  /* font-size: 1rem;  Adjust as needed */
+  margin-bottom: 1rem;
+}
+

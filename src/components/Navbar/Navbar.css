@@ -14,13 +14,15 @@
   
 .navbar-right {
     display: flex;
-    gap: 1rem;
+    gap: 1rem; 
 }
 
 .navbar-component {
    cursor: pointer;
 }
-  
-/* .nav{
-    background-color: ;
-} */
+
+@media (max-width: 768px) {
+    .navbar-container{
+        font-size: 1rem;
+    }
+}

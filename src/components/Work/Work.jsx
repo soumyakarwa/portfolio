@@ -8,7 +8,6 @@ import fibonacciGif from "../../assets/fibonacci-copy.gif";
 const Work = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
-  const [unzippedFiles, setUnzippedFiles] = useState({});
 
   const handleProjectHover = (projectName) => {
     setHoveredProject(projectName);

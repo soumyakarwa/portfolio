@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.67826b4c.css",
-    "main.js": "/portfolio/static/js/main.6d9f534d.js",
+    "main.css": "/portfolio/static/css/main.a60d2174.css",
+    "main.js": "/portfolio/static/js/main.1217319f.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/wordpotrait.gif": "/portfolio/static/media/wordpotrait.24af75d33a23541d7216.gif",
     "static/media/fibonacci-copy.gif": "/portfolio/static/media/fibonacci-copy.31cb6c3b8bff990e2a3a.gif",
@@ -16,14 +16,14 @@
     "static/media/PlayfairDisplay-VariableFont_wght.ttf": "/portfolio/static/media/PlayfairDisplay-VariableFont_wght.20240034b80f50c3ad00.ttf",
     "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/portfolio/static/media/PlayfairDisplay-Italic-VariableFont_wght.2f795353f413479428d6.ttf",
     "static/media/github.svg": "/portfolio/static/media/github.3b21c250a99986431958daaa9246a45a.svg",
-    "index.html": "/portfolio/index.html",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.98956d298e14a6384fdb39c42269f2f2.svg",
-    "main.67826b4c.css.map": "/portfolio/static/css/main.67826b4c.css.map",
-    "main.6d9f534d.js.map": "/portfolio/static/js/main.6d9f534d.js.map",
+    "index.html": "/portfolio/index.html",
+    "main.a60d2174.css.map": "/portfolio/static/css/main.a60d2174.css.map",
+    "main.1217319f.js.map": "/portfolio/static/js/main.1217319f.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67826b4c.css",
-    "static/js/main.6d9f534d.js"
+    "static/css/main.a60d2174.css",
+    "static/js/main.1217319f.js"
   ]
 }

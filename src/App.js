@@ -19,8 +19,8 @@ const App = () => {
     switch (currentSection) {
       case 'work':
         return <Work />;
-      case 'play':
-        return <Play />;
+      // case 'play':
+      //   return <Play />;
       case 'about':
         return <About />;
       default:

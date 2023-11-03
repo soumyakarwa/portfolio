@@ -19,6 +19,7 @@
 
 .image-container .placeholder {
   width: 60vw; 
+  height: 40vh; 
   font-family: var(--body-font-italics); 
   font-size: var(--body-font-size);
   display: flex; 

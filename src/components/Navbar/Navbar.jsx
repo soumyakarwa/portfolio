@@ -21,12 +21,12 @@ const Navbar = ({ onSectionChange }) => {
         >
           work
         </div>
-        <div
+        {/* <div
           className="navbar-component"
           onClick={() => onSectionChange("play")}
         >
           play
-        </div>
+        </div> */}
         <div
           className="navbar-component"
           onClick={() => onSectionChange("about")}

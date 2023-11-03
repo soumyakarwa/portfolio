@@ -1,5 +1,5 @@
 // ProjectHolder.jsx
-import React from "react";
+import React, { useState } from "react";
 import "./ProjectHolder.css";
 import Content from "../Content/Content.jsx";
 
@@ -11,23 +11,52 @@ const ProjectHolder = ({
   description,
   githubpages,
   repolink,
-  isShown,
-  onHover,
-  onClick,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [click, setClick] = useState(false);
+  const [hover, setHover] = useState(false);
+  const [count, setCount] = useState(0);
+
+  const handleMouseEnter = () => {
+    setHover(true);
+    setIsExpanded(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+    if (click) {
+      setIsExpanded(true);
+    } else {
+      setIsExpanded(false);
+    }
+  };
+
+  const handleClick = () => {
+    console.log(count);
+    if (count === 0) {
+      setClick(true);
+      setIsExpanded(true);
+      setCount(1);
+    } else {
+      setClick(false);
+      setIsExpanded(false);
+      setCount(0);
+    }
+  };
+
   return (
     <div
       className="project-holder"
-      onMouseEnter={onHover}
-      onMouseLeave={() => onHover(null)} // Clear the hovered project on mouse leave
-      onClick={onClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
     >
       <hr className="divider" />
       <div className="project-content">
         <div className="project-name">{projectName}</div>
         <div className="project-scope">{projectScope}</div>
       </div>
-      {isShown && (
+      <div className={`holder ${isExpanded ? "visible" : "hidden"}`}>
         <Content
           imageSrc={img}
           subtitle={subtitle}
@@ -35,7 +64,7 @@ const ProjectHolder = ({
           githubpages={githubpages}
           repolink={repolink}
         />
-      )}
+      </div>
     </div>
   );
 };

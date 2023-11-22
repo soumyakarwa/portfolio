@@ -43,7 +43,7 @@ const Work = () => {
         subtitle="Trends and Patterns in a Literary Landscape"
         description="I was thinking about what’s constant about me throughout the years - through school, college and life events. It’s that I love to read. No matter what’s going on in my life, what my state of my mind is, I always find solace in books. Its my way to escape into a different life, to experiences that aren’t my own. I love understanding different characters, I love to dissect their motivations, their habits and their traits. Books are truly my safe haven. 
 
-        I compiled data on the variety of books I’ve read over the past 10-12 years (through Goodreads, Kindle, physical books, online buying history and iBooks app) to analyze any trends and patterns that arise in the books I’ve read over the years. Each datapoint had nine properties: Name, Author, Rating (out of 5), Year Read, Genres, Length, Year Published, Frequency, and Emotion."
+        I compiled data on the variety of books I’ve read over the past 10-12 years (through Goodreads, Kindle, physical books, online buying history and iBooks app) to analyze any trends and patterns that arise. I wanted to visualize it in a way that could help me see how I've grown as a reader. Am I a plot reader, do I read for the characters? Each datapoint had nine properties: Name, Author, Rating (out of 5), Year Read, Genres, Length, Year Published, Frequency, and Emotion."
       />
       <ProjectHolder
         projectName="typographic form"

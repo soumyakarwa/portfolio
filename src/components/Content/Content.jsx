@@ -14,7 +14,7 @@ const Content = ({
     <div className="placeholder">coming soon</div>
   );
 
-  const renderButtons = imageSrc ? (
+  const renderButtons = githubpages ? (
     <>
       <div className="button">
         <a href={githubpages}>check it out</a>

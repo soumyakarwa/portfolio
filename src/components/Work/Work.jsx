@@ -4,6 +4,7 @@ import ProjectHolder from "../ProjectHolder/ProjectHolder.jsx";
 import wordPotraitGif from "../../assets/wordpotrait.gif";
 import typographicIllusionGif from "../../assets/typographicIllusion.gif";
 import fibonacciGif from "../../assets/fibonacci-copy.gif";
+import nuclearGif from "../../assets/nuclearDawn.gif";
 import lightAndTime from "../../assets/lightAndTime.gif";
 import formGeneratorGif from "../../assets/formGenerator.gif";
 
@@ -44,6 +45,15 @@ const Work = () => {
         description="I was thinking about what’s constant about me throughout the years - through school, college and life events. It’s that I love to read. No matter what’s going on in my life, what my state of my mind is, I always find solace in books. Its my way to escape into a different life, to experiences that aren’t my own. I love understanding different characters, I love to dissect their motivations, their habits and their traits. Books are truly my safe haven. 
 
         I compiled data on the variety of books I’ve read over the past 10-12 years (through Goodreads, Kindle, physical books, online buying history and iBooks app) to analyze any trends and patterns that arise. I wanted to visualize it in a way that could help me see how I've grown as a reader. Am I a plot reader, do I read for the characters? Each datapoint had nine properties: Name, Author, Rating (out of 5), Year Read, Genres, Length, Year Published, Frequency, and Emotion."
+      />
+      <ProjectHolder
+        projectName="nuclear dawn"
+        projectScope="editorial design"
+        img={nuclearGif}
+        subtitle="A Brief History of the Nuclear Age"
+        description="A short while ago, I learned the gravity of the nuclear age: the ability of global leaders to bring an end to civilization with the push of a button and how often we’ve come close to it since the detonation of the first atomic bomb in 1945. 
+
+        I designed and curated content for a 120-page, 5x8 book that delves into the intricate and often unsettling history of nuclear weapons as well as the complex web of scientific breakthroughs, geopolitical maneuvers, and ethical dilemmas that came about since 1945."
       />
       <ProjectHolder
         projectName="typographic form"

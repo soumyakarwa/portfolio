@@ -31,7 +31,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <Background />
       <Navbar onSectionChange={handleSectionChange} />
       <SwitchTransition>
         <CSSTransition

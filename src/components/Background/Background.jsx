@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "./Background.css";
 
+/**
+ * Background.jsx created a gradient background in the form of moving blobs
+ */
 const Background = () => {
   useEffect(() => {
     const canvas = document.getElementById("blobCanvas");
@@ -26,9 +29,15 @@ const Background = () => {
     // Create 3 blobs with specified colors
     let blobs = [
       createBlob("rgba(228, 213, 242, 0.8)"), // lavender
-      createBlob("rgba(181, 245, 238, 0.8)"), // light blue
-      createBlob("rgba(243, 244, 181, 0.8)"), // yellow
+      createBlob("rgba(181, 245, 238, 0.6)"), // light blue
+      createBlob("rgba(243, 244, 181, 0.7)"), // yellow
     ];
+
+    // GREYS
+    // createBlob("rgba(120, 120, 120, 0.5)"), // lavender
+    // createBlob("rgba(100, 100, 100, 0.7)"), // light blue
+    // createBlob("rgba(50, 50, 50, 0.8)"), // yellow
+
     // Function to animate blobs
     const animateBlobs = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);

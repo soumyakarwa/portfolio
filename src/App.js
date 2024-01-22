@@ -1,15 +1,16 @@
 // App.jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./App.css";
-import Navbar from '../src/components/Navbar/Navbar.jsx';
+import Navbar from "../src/components/Navbar/Navbar.jsx";
 import Work from "../src/components/Work/Work.jsx";
 import Play from "../src/components/Play/Play.jsx";
 import About from "../src/components/About/About.jsx";
-import Footer from "../src/components/Footer/Footer.jsx"
-import { SwitchTransition, CSSTransition } from 'react-transition-group';
+import Footer from "../src/components/Footer/Footer.jsx";
+import Background from "./components/Background/Background.jsx";
+import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 const App = () => {
-  const [currentSection, setCurrentSection] = useState('work');
+  const [currentSection, setCurrentSection] = useState("work");
 
   const handleSectionChange = (section) => {
     setCurrentSection(section);
@@ -17,30 +18,31 @@ const App = () => {
 
   const renderSection = () => {
     switch (currentSection) {
-      case 'work':
+      case "work":
         return <Work />;
       // case 'play':
       //   return <Play />;
-      case 'about':
+      case "about":
         return <About />;
       default:
-        return <Work />; 
+        return <Work />;
     }
   };
 
   return (
     <div className="App">
+      <Background />
       <Navbar onSectionChange={handleSectionChange} />
       <SwitchTransition>
         <CSSTransition
           key={currentSection}
-          timeout={300}  // Match the duration in your CSS
+          timeout={300} // Match the duration in your CSS
           classNames="fade"
         >
           {renderSection()}
         </CSSTransition>
       </SwitchTransition>
-    <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import "./Work.css";
 import ProjectHolder from "../ProjectHolder/ProjectHolder.jsx";
 import wordPotraitGif from "../../assets/wordpotrait.gif";

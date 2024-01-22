@@ -4,7 +4,7 @@ import ProjectHolder from "../ProjectHolder/ProjectHolder.jsx";
 import wordPotraitGif from "../../assets/wordpotrait.gif";
 import typographicIllusionGif from "../../assets/typographicIllusion.gif";
 import fibonacciGif from "../../assets/fibonacci-copy.gif";
-import nuclearGif from "../../assets/nuclearDawn.gif";
+import nuclearGif from "../../assets/nuclearDawn1.gif";
 import lightAndTime from "../../assets/lightAndTime.gif";
 import formGeneratorGif from "../../assets/formGenerator.gif";
 

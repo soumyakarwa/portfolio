@@ -4,12 +4,11 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  color: black;
+  color: var(--font-color);
   text-align: left;
   padding: var(--margin);
   box-sizing: border-box;
   font-size: var(--footer-font-size);
-  z-index: 0;
 }
 
 .footer-content {
@@ -18,20 +17,14 @@
   align-items: center;
 }
 
-.email {
-  /* margin-left: 1rem; or as needed */
-}
-
 .icons {
   display: flex;
   gap: 1rem; /* space between icons */
 }
 
 .icon {
-  fill: black;
+  fill: var(--font-color);
   width: 1.25rem;
   height: 1.25rem;
   cursor: pointer;
 }
-
-/* Add additional styles for responsiveness or other states as needed */

@@ -36,7 +36,6 @@ const App = () => {
         <LoadingAnimation />
         <Navbar onSectionChange={handleSectionChange} />
         <Introduction />
-        {/* <GradientText text="visual design + creative coding" /> */}
         {/* <SwitchTransition>
         <CSSTransition
           key={currentSection}

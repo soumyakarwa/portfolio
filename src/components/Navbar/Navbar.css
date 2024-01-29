@@ -1,16 +1,11 @@
 .navbar-container {
   font-weight: var(--font-weight-medium);
   font-size: var(--navbar-font-size);
+  color: var(--font-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 2rem; */
   margin-bottom: 2rem;
-  z-index: 0;
-}
-
-.navbar-left {
-  /* flex: 1; */
 }
 
 .navbar-right {

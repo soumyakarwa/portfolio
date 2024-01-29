@@ -1,20 +1,40 @@
-// LoadingAnimation.js
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import Typewriter from "typewriter-effect";
 import "./LoadingAnimation.css";
 
 const LoadingAnimation = () => {
   const [hideAnimation, setHideAnimation] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setHideAnimation(true);
-    }, 800); // 3000ms = 3 seconds, adjust as needed
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div className={`loading-overlay ${hideAnimation ? "hide" : ""}`}></div>
+    <div className={`loading-overlay ${hideAnimation ? "hide" : ""}`}>
+      <div className="typewriter-container">
+        <span className="fixed-phrase">Soumya Karwa | </span>
+        <div className="typewriter-effect">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .pauseFor(750)
+                .typeString("Visual Designer")
+                .pauseFor(750)
+                .deleteAll()
+                .typeString("Creative Developer")
+                .pauseFor(750)
+                .deleteAll()
+                .typeString("AI Enthusiast")
+                .pauseFor(1000)
+                .callFunction(() => {
+                  setHideAnimation(true);
+                })
+                .start();
+            }}
+            options={{
+              delay: 20,
+              deleteSpeed: 5,
+            }}
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 

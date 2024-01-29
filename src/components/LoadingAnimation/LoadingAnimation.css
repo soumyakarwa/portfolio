@@ -4,11 +4,38 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black; /* or any color you want for the loading screen */
+  background-color: var(--font-color);
   z-index: 10;
-  transition: transform 1s ease-in-out; /* smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    transform 1s ease-in-out,
+    opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.typewriter-container {
+  color: var(--background-color);
+  font-size: var(--navbar-font-size);
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center the contents */
+  position: relative;
+  z-index: 11;
+}
+
+.typewriter-effect {
+  position: absolute;
+  left: calc(100% + 0.4rem);
+  white-space: nowrap;
+}
+
+.fixed-phrase {
+  /* margin-right: 0.5rem; */
+  white-space: nowrap;
 }
 
 .loading-overlay.hide {
-  transform: translateY(-100%); /* slide up to hide */
+  transform: translateY(-100%);
+  opacity: 0;
 }

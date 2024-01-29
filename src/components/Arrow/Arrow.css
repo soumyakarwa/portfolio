@@ -1,0 +1,17 @@
+.arrow {
+  /* font-size: var(--arrow-size); */
+  font-weight: var(--font-weight-light);
+  /* / color: var(--font-color); Use your color variable */
+  position: relative;
+  display: inline-flex; /* Use inline-flex for better alignment */
+  align-items: center; /* Align items in the center vertically */
+  width: fit-content;
+}
+
+.arrow-reflection {
+  display: inline-block;
+  transform: scaleX(-1); /* Reflect the '1' horizontally */
+  position: absolute;
+  bottom: 0;
+  /* left: calc(var(--arrow-size) / 32 * 1%); */
+}

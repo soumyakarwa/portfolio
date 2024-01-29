@@ -4,12 +4,13 @@
   flex-direction: column;
   /* height: 100vh; Take full height of the viewport */
   justify-content: center;
-  align-items: stretch; /* Stretch children to fill the width */
-  z-index: 20;
+  align-items: stretch;
+  margin-bottom: var(--margin);
 }
 
 .text-left,
-.text-right {
+.text-right,
+.text-center {
   flex: 1;
   display: flex;
 }
@@ -17,9 +18,20 @@
 .text-left {
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: -1rem;
+  margin-left: calc(1 * var(--margin));
+}
+
+.text-center {
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: -1rem;
+  margin-right: calc(0 * var(--margin));
 }
 
 .text-right {
   align-items: center;
   justify-content: flex-end;
+  margin-top: -2rem;
+  margin-right: calc(1 * var(--margin));
 }

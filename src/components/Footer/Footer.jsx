@@ -1,8 +1,8 @@
 // Footer.jsx
 import React from "react";
 import "./Footer.css";
-import { ReactComponent as Github } from "../../assets/github.svg"; // Update the path to your SVG file
-import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg"; // Update the path to your SVG file
+import { ReactComponent as Github } from "../../assets/github.svg";
+import { ReactComponent as LinkedIn } from "../../assets/linkedin.svg";
 
 const Footer = () => {
   return (

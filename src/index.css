@@ -8,7 +8,9 @@
 
   --body-font-size: 0.8rem;
   --navbar-font-size: 1.25rem;
-  --footer-font-size: 1rem;
+  --footer-font-size: 1.25rem;
+  --introduction-font-size: 8.6rem;
+  --arrow-size: 3.3rem;
 
   --margin: 2rem;
 
@@ -40,6 +42,7 @@
 body {
   margin: 0;
   font-family: var(--body-font);
+  font-weight: var(--font-weight-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);

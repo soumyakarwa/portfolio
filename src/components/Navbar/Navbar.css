@@ -1,5 +1,4 @@
 .navbar-container {
-  font-weight: var(--font-weight-medium);
   font-size: var(--navbar-font-size);
   color: var(--font-color);
   display: flex;

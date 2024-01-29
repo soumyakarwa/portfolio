@@ -4,11 +4,11 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  color: var(--font-color);
   text-align: left;
-  padding: var(--margin);
   box-sizing: border-box;
-  font-size: var(--footer-font-size);
+  padding: var(--margin);
+  color: var(--font-color);
+  font-size: var(--navbar-font-size);
 }
 
 .footer-content {
@@ -19,12 +19,12 @@
 
 .icons {
   display: flex;
-  gap: 1rem; /* space between icons */
+  gap: 1rem;
 }
 
 .icon {
   fill: var(--font-color);
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
 }

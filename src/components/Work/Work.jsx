@@ -6,15 +6,10 @@ import fibonacciGif from "../../assets/fibonacci-copy.gif";
 import nuclearGif from "../../assets/nuclearDawn1.gif";
 import lightAndTime from "../../assets/lightAndTime.gif";
 import formGeneratorGif from "../../assets/formGenerator.gif";
-import Background from "../Background/Background.jsx";
-// import ProjectHolderNew from "../ProjectHolder/ProjectHolderNew.jsx";
-// import testTitleImage from "../../assets/image-test.png";
 
 const Work = () => {
   return (
     <div className="work-container">
-      <Background />
-      {/* <ProjectHolderNew title="fibonacci" imageUrl={testTitleImage} /> */}
       <ProjectHolder
         projectName="fibonacci"
         projectScope="creative coding, digital media"

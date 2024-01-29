@@ -6,9 +6,10 @@
   width: 100%;
   color: black;
   text-align: left;
-  padding: 1rem;
+  padding: var(--margin);
   box-sizing: border-box;
   font-size: var(--footer-font-size);
+  z-index: 0;
 }
 
 .footer-content {

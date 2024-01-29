@@ -6,7 +6,8 @@ import Work from "../src/components/Work/Work.jsx";
 import Play from "../src/components/Play/Play.jsx";
 import About from "../src/components/About/About.jsx";
 import Footer from "../src/components/Footer/Footer.jsx";
-import Background from "./components/Background/Background.jsx";
+import Introduction from "./components/Introduction/Introduction.jsx";
+import LoadingAnimation from "./components/LoadingAnimation/LoadingAnimation.jsx";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 const App = () => {
@@ -30,9 +31,13 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <Navbar onSectionChange={handleSectionChange} />
-      <SwitchTransition>
+    <div>
+      <div className="App">
+        <LoadingAnimation />
+        <Navbar onSectionChange={handleSectionChange} />
+        <Introduction />
+        {/* <GradientText text="visual design + creative coding" /> */}
+        {/* <SwitchTransition>
         <CSSTransition
           key={currentSection}
           timeout={300} // Match the duration in your CSS
@@ -40,8 +45,9 @@ const App = () => {
         >
           {renderSection()}
         </CSSTransition>
-      </SwitchTransition>
-      <Footer />
+  </SwitchTransition>*/}
+        <Footer />
+      </div>
     </div>
   );
 };

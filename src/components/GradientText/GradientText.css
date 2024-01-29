@@ -1,0 +1,36 @@
+/* Container to center the text */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Create a moving gradient effect */
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(
+    45deg,
+    #ef86ce,
+    #eb7233,
+    #275dab,
+    #eb7233,
+    #ef86ce
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: movingGradient 7s ease infinite;
+}

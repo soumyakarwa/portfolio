@@ -1,13 +1,18 @@
 :root {
-  --body-font: 'PlayfairDisplay'; 
-  --body-font-italics:'PlayfairDisplayItalics'; 
+  --body-font: "PlayfairDisplay";
+  --body-font-italics: "PlayfairDisplayItalics";
   --font-weight-light: 200;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
+
   --body-font-size: 0.8rem;
   --navbar-font-size: 1.25rem;
   --footer-font-size: 1rem;
+
+  --margin: 2rem;
+
+  --background-color: #fffff0;
 }
 
 /* TRANSITIONS*/
@@ -34,21 +39,22 @@ body {
   font-family: var(--body-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay';
-  src: url('../public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-family: "PlayfairDisplay";
+  src: url("../public/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
 }
 
 @font-face {
-  font-family: 'PlayfairDisplayItalics';
-  src: url('../public/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+  font-family: "PlayfairDisplayItalics";
+  src: url("../public/fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf")
+    format("truetype");
 }
-
-

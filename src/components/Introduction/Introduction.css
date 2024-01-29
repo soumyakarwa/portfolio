@@ -1,0 +1,25 @@
+/* Container for the texts */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; Take full height of the viewport */
+  justify-content: center;
+  align-items: stretch; /* Stretch children to fill the width */
+  z-index: 20;
+}
+
+.text-left,
+.text-right {
+  flex: 1;
+  display: flex;
+}
+
+.text-left {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.text-right {
+  align-items: center;
+  justify-content: flex-end;
+}

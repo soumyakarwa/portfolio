@@ -17,7 +17,7 @@ const Background = () => {
     // Function to create blobs
     const createBlob = (color) => {
       // Increase the radius for larger blobs
-      const radius = randomNum(canvas.width / 2, canvas.width / 1.5); // larger radius for bigger blobs
+      const radius = randomNum(canvas.width / 3, canvas.width / 2); // larger radius for bigger blobs
       const posX = randomNum(0, canvas.width);
       const posY = randomNum(0, canvas.height);
       const speedX = randomNum(-2, 2);

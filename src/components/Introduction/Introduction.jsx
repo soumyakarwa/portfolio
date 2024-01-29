@@ -5,13 +5,16 @@ import Arrow from "../Arrow/Arrow.jsx";
 
 const Introduction = () => {
   const [myFontSize, setMyFontSize] = useState("");
+  const [myArrowSize, setMyArrowSize] = useState("");
+  const [myArrowColor, setMyArrowColor] = useState("");
 
   useEffect(() => {
     const rootStyle = getComputedStyle(document.documentElement);
-    const largeFontSize = rootStyle
-      .getPropertyValue("--introduction-font-size")
-      .trim();
-    setMyFontSize(largeFontSize);
+    setMyFontSize(
+      rootStyle.getPropertyValue("--introduction-font-size").trim()
+    );
+    setMyArrowSize(rootStyle.getPropertyValue("--arrow-size").trim());
+    setMyArrowColor(rootStyle.getPropertyValue("--font-color").trim());
   }, []);
 
   return (
@@ -25,7 +28,9 @@ const Introduction = () => {
       <div className="text-right">
         <GradientText text="creative developer" fontSize={myFontSize} />
       </div>
-      <Arrow />
+      <div className="arrow-container">
+        <Arrow className="arrow" fontSize={myArrowSize} color={myArrowColor} />
+      </div>
       {/* <div className="text-center">
         <GradientText text="ai enthusiast" fontSize="6.5rem" />
       </div> */}

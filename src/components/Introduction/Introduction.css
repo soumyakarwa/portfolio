@@ -2,10 +2,8 @@
 .text-container {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; Take full height of the viewport */
-  justify-content: center;
-  align-items: stretch;
-  margin-bottom: var(--margin);
+  /* justify-content: center; */
+  margin-bottom: calc(2 * var(--margin));
 }
 
 .text-left,
@@ -34,4 +32,39 @@
   justify-content: flex-end;
   margin-top: -2rem;
   margin-right: calc(1 * var(--margin));
+}
+
+/* Define blink animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.05;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Define move (up-and-down) animation */
+@keyframes move {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(calc(var(--arrow-size) / 3));
+  }
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.arrow {
+  /* margin-top: var(--margin); */
+  opacity: 0.7;
+  /* animation: blink 1.5s infinite; */
+  animation: move 1.5s infinite;
 }

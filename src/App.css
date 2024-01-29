@@ -1,4 +1,17 @@
 .App {
   margin: var(--margin);
-  height: 100%;
+  height: fit-content;
+}
+
+.content {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(var(--margin)); /* Slightly lower position */
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out;
+}
+
+.content.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Restored to original position */
 }

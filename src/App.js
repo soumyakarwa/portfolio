@@ -1,5 +1,5 @@
 // App.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "../src/components/Navbar/Navbar.jsx";
 import Work from "../src/components/Work/Work.jsx";
@@ -12,6 +12,23 @@ import { SwitchTransition, CSSTransition } from "react-transition-group";
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState("work");
+  const [isVisible, setIsVisible] = useState(false); // New state to manage visibility
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > window.innerHeight * 0.1) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
 
   const handleSectionChange = (section) => {
     setCurrentSection(section);
@@ -36,16 +53,18 @@ const App = () => {
         <LoadingAnimation />
         <Navbar onSectionChange={handleSectionChange} />
         <Introduction />
-        {/* <SwitchTransition>
-        <CSSTransition
-          key={currentSection}
-          timeout={300} // Match the duration in your CSS
-          classNames="fade"
-        >
-          {renderSection()}
-        </CSSTransition>
-  </SwitchTransition>*/}
-        <Footer />
+        <SwitchTransition>
+          <CSSTransition
+            key={currentSection}
+            timeout={300} // Match the duration in your CSS
+            classNames="fade"
+          >
+            <div className={isVisible ? "content visible" : "content"}>
+              {renderSection()}
+            </div>
+          </CSSTransition>
+        </SwitchTransition>
+        {/* <Footer /> */}
       </div>
     </div>
   );

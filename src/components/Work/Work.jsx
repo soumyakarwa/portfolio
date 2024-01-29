@@ -1,5 +1,7 @@
 import "./Work.css";
+import React, { useEffect, useState } from "react";
 import ProjectHolder from "../ProjectHolder/ProjectHolder.jsx";
+import GradientText from "../GradientText/GradientText.jsx";
 import wordPotraitGif from "../../assets/wordpotrait.gif";
 import typographicIllusionGif from "../../assets/typographicIllusion.gif";
 import fibonacciGif from "../../assets/fibonacci-copy.gif";
@@ -8,8 +10,15 @@ import lightAndTime from "../../assets/lightAndTime.gif";
 import formGeneratorGif from "../../assets/formGenerator.gif";
 
 const Work = () => {
+  // const [myFontSize, setMyFontSize] = useState("");
+
+  // useEffect(() => {
+  //   const rootStyle = getComputedStyle(document.documentElement);
+  //   setMyFontSize(rootStyle.getPropertyValue("--navbar-font-size").trim());
+  // }, []);
   return (
     <div className="work-container">
+      {/* <GradientText text="SELECTED PROJECTS" fontSize={myFontSize} /> */}
       <ProjectHolder
         projectName="fibonacci"
         projectScope="creative coding, digital media"

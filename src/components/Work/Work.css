@@ -1,3 +1,4 @@
-.work-container{
-    margin-bottom:4rem;
+.work-container {
+  margin-bottom: 4rem;
+  color: var(--font-color);
 }
